@@ -16,5 +16,9 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  server: {
+    host : true, // Set to true because of docker container
+    port: 5173
   }
 })
